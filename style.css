@@ -1,0 +1,28 @@
+/* Style for the body */
+body {
+    font-family: Arial;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+}
+
+/* Style for the header */
+header {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
+
+/* Style for the navigation bar */
+nav {
+    margin-top: 20px; /* Adds a gap between the header and the nav */
+}
+
+footer {
+    color: unset !important;  /* Remove any color applied */
+    background-color: unset !important; /* Remove any background color applied */
+    text-align: center;
+    padding: 10px;
+}

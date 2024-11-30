@@ -1,88 +1,40 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Gallery</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-            background: url('background.jpg') no-repeat center center fixed;
-            color: #333;       
-	}
-
-
-        h1 {
-            color: white;
-            background: green; 
-            padding: 30px 20px;
-            font-size: 36px;
-            font-weight: bold;    
-        }
-
-        .gallery {
-            gap: 20px;
-            padding: 20px;
-            margin-top: 20px;
-        }
-
-        .gallery img {
-            width: 200px;
-            height: auto;
-            border-radius: 15px;
-            
-            
-        }
-
-        .gallery img:hover {
-            transform: scale(1.1); 
-        }
-
-        .media-container {
-            margin-top: 40px;
-            padding: 20px;
-        }
-
-        video, audio {
-            margin: 20px;
-            max-width: 90%;           
-        }
-
-        .media-container h2 {
-            color: black;
-            font-size: 28px;
-            margin-bottom: 10px;
-       
-</style>
+    <title>My Gallery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <h1>Gallery</h1>
+    <header>
+        <h1>My Gallery</h1>
+    </header>
 
-<marquee> From Moments to Masterpieces – Explore My Gallery! </marquee>
+    <marquee> From Moments to Masterpieces – Explore My Gallery! </marquee>
 
-    <div class="gallery">
-        <img src="pic1.jpg" alt="Image 1">
-        <img src="pic2.jpg" alt="Image 2">
-        <img src="pic3.jpg" alt="Image 3">
-        <img src="pic4.jpg" alt="Image 4">
-        <img src="pic5.jpg" alt="Image 5">
+    <div class="gallery" style="display: flex;  justify-content: center; gap: 20px; padding: 20px; margin-top: 20px;">
+        <img src="pic1.jpg" alt="Image 1" style="width: 200px; height: auto; border-radius: 15px;">
+        <img src="pic2.jpg" alt="Image 2" style="width: 200px; height: auto; border-radius: 15px;">
+        <img src="pic3.jpg" alt="Image 3" style="width: 200px; height: auto; border-radius: 15px;">
+        <img src="pic4.jpg" alt="Image 4" style="width: 200px; height: auto; border-radius: 15px;">
+        <img src="pic5.jpg" alt="Image 5" style="width: 200px; height: auto; border-radius: 15px;">
     </div>
 
-    <div class="media-container">
-        <h2>Videos</h2>
-        <video width="320" height="240" controls>
-            <source src="video1.mp4" type="video/mp4">  
-        </video>
+    <div class="media-container" style="margin-top: 40px; padding: 20px; text-align: center;">
+        <h2 style="color: black; font-size: 28px; margin-bottom: 10px;">Videos</h2>
 
-        <video width="320" height="240" controls>
-            <source src="video2.mp4" type="video/mp4"> 
-        </video>
 
-        <h2>Audio</h2>
-        <audio controls>
+        <div style="text-align: center;">
+            <video width="320" height="240" controls style="display: block; margin: 0 auto;">
+                <source src="video1.mp4" type="video/mp4">  
+            </video>
+        </div>
+
+        <h2 style="color: black; font-size: 28px; margin-bottom: 10px;">Audio</h2>
+        <audio controls style="display: block; margin: 20px auto;">
             <source src="audio.mp3" type="audio/mpeg">
         </audio>
     </div>
-
-    
 </body>
 </html>
+
